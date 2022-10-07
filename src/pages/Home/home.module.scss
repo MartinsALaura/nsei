@@ -1,0 +1,18 @@
+.home{
+    align-items: center;
+    background-color: #f6f6f6;
+    height: 100vh;
+
+    .grow{
+     flex-grow: 1;   
+    }
+
+    .icons{
+        padding-left: 12px ;
+
+    }
+
+    .login-button{
+        color:#3EA6FF
+    }
+}
