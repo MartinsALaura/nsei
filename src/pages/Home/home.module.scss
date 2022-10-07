@@ -3,16 +3,25 @@
     background-color: #f6f6f6;
     height: 100vh;
 
-    .grow{
+    .AppBar {
+        box-shadow: none;
+        z-index: 1201;
+    }
+
+    .logo {
+        height: 25px;
+    }
+
+    .grow {
      flex-grow: 1;   
     }
 
-    .icons{
+    .icons {
         padding-left: 12px ;
 
     }
 
-    .login-button{
+    .login-button {
         color:#3EA6FF
     }
 }
