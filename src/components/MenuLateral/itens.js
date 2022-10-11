@@ -6,6 +6,7 @@ import SubscriptionsOutlinedIcon from '@mui/icons-material/SubscriptionsOutlined
 import VideoLibraryOutlinedIcon from '@mui/icons-material/VideoLibraryOutlined';
 import HistoryOutlinedIcon from '@mui/icons-material/HistoryOutlined';
 import { AddCircle } from '@mui/icons-material';
+
 const itensMenuLateral = [
     {
         index: 0,

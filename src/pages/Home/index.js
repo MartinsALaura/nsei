@@ -5,11 +5,15 @@ import React from 'react';
 import style from './home.module.scss'
 
 //componentes:
-import IconButton from '@mui/material/IconButton';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Button from '@mui/material/Button'; 
+import {
+    AppBar,
+    Box, 
+    IconButton,
+    Toolbar,
+    Button,
+} from '@mui/material/';
 import MenuLateral from '../../components/MenuLateral'
+import Content from '../../components/Content';
 
 //ícones:
 import MenuIcon from '@mui/icons-material/Menu';
@@ -47,8 +51,13 @@ export default function Home() {
                 </Toolbar>
             </AppBar>
             
-            {/* MENU LATERAL */}
-            <MenuLateral/>    
+            <Box display='flex'>
+                {/* MENU LATERAL */}
+                <MenuLateral/>    
+
+                {/*  */}
+                <Content/>
+            </Box>
         </div>
     )
 }
