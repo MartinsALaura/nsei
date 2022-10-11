@@ -5,8 +5,7 @@ import LiveTvOutlinedIcon from '@mui/icons-material/LiveTvOutlined';
 import SubscriptionsOutlinedIcon from '@mui/icons-material/SubscriptionsOutlined';
 import VideoLibraryOutlinedIcon from '@mui/icons-material/VideoLibraryOutlined';
 import HistoryOutlinedIcon from '@mui/icons-material/HistoryOutlined';
-import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-
+import { AddCircle } from '@mui/icons-material';
 const itensMenuLateral = [
     {
         index: 0,
@@ -41,92 +40,92 @@ const itensMenuLateral = [
     {
         index: 6,
         text: 'Música',
-        icon: ''
+        icon: <AddCircle/>
     },
     {
         index: 7,
         text: 'Esportes',
-        icon: ''
+        icon: <AddCircle/>
     }, 
     {
         index: 8,
         text:'Jogos',
-        icon: ''
+        icon: <AddCircle/>
     },
     {
         index: 9,
         text:'Filmes',
-        icon:''
+        icon:<AddCircle/>
     },
     {
         index: 10,
         text: 'Notícias',
-        icon:''
+        icon:<AddCircle/>
     },
     {
         index: 11,
         text:'Ao vivo',
-        icon: ''
+        icon: <AddCircle/>
     }, 
     {
         index: 12,
         text:'Aprender',
-        icon: ''
+        icon: <AddCircle/>
     },
     {
         index: 12,
         text:'Vídeos do momento',
-        icon: ''
+        icon: <AddCircle/>
     },
     {
         index: 13,
         text:'Vídeo em 360°',
-        icon: ''
+        icon: <AddCircle/>
     },
     {
         index: 14,
         text:'Procurar canais',
-        icon: ''
+        icon: <AddCircle/>
     },
     {
         index: 15,
         text:'Youtube Premium',
-        icon: ''
+        icon: <AddCircle/>
     },
     {
         index: 16,
         text:'Youtube Music',
-        icon: ''
+        icon: <AddCircle/>
     },
     {
         index: 17,
         text:'Youtube Kids',
-        icon: ''
+        icon: <AddCircle/>
     },
     {
         index: 18,
         text:'Youtube TV',
-        icon: ''
+        icon: <AddCircle/>
     },
     {
         index: 20,
         text:'Configurações',
-        icon: ''
+        icon: <AddCircle/>
     },
     {
         index: 21,
         text:'Histórico de denúncias',
-        icon: ''
+        icon: <AddCircle/>
     },
     {
         index: 22,
         text:'Ajuda',
-        icon: ''
+        icon: <AddCircle/>
     },
     {
         index: 22,
         text:'Enviar feedback',
-        icon: ''
+        icon: <AddCircle/>
     },
 ]
 export default itensMenuLateral;
