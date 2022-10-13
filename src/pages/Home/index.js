@@ -1,8 +1,10 @@
 //###IMPORTS###
-import React from 'react';
+import {React, useState} from 'react';
 
 //Style:
 import style from './home.module.scss'
+//import { makeStyles } from '@mui/material/styles';
+import { useTheme } from '@mui/material/styles';
 
 //componentes:
 import {
@@ -11,15 +13,15 @@ import {
     IconButton,
     Toolbar,
     Button,
+    Hidden,
 } from '@mui/material/';
 import MenuLateral from '../../components/MenuLateral'
-import Content from '../../components/Content';
+import Conteudo from '../../components/Conteudo';
 
 //ícones:
 import MenuIcon from '@mui/icons-material/Menu';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-
 //Imagens
 import Logo from '../../img/preto.png'
 
@@ -27,7 +29,7 @@ export default function Home() {
     return (
         <div className={style.home}>
             {/* NAVBAR */}
-            <AppBar className={style.AppBar} color='inherit'>
+            <AppBar className={style['AppBar']} color='inherit'>
                 <Toolbar>
                     {/* MENU */}
                     <IconButton className={style.icons} edge="start" color="inherit" aria-label="menu" sx={{ mr: 2}}>
@@ -52,11 +54,10 @@ export default function Home() {
             </AppBar>
             
             <Box display='flex'>
-                {/* MENU LATERAL */}
-                <MenuLateral/>    
-
-                {/*  */}
-                <Content/>
+               <Hidden mdDown>
+                    <MenuLateral/> {/* MENU LATERAL */}
+               </Hidden>
+                <Conteudo/> {/* CONTEÚDO (VÍDEOS) */}
             </Box>
         </div>
     )

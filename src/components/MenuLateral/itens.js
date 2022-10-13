@@ -6,6 +6,22 @@ import SubscriptionsOutlinedIcon from '@mui/icons-material/SubscriptionsOutlined
 import VideoLibraryOutlinedIcon from '@mui/icons-material/VideoLibraryOutlined';
 import HistoryOutlinedIcon from '@mui/icons-material/HistoryOutlined';
 import { AddCircle } from '@mui/icons-material';
+import MusicNoteOutlinedIcon from '@mui/icons-material/MusicNoteOutlined';
+import EmojiEventsRoundedIcon from '@mui/icons-material/EmojiEventsRounded';
+import VideogameAssetIcon from '@mui/icons-material/VideogameAsset';
+import LocalMoviesIcon from '@mui/icons-material/LocalMovies';
+import NewspaperIcon from '@mui/icons-material/Newspaper';
+import StreamIcon from '@mui/icons-material/Stream';
+import EmojiObjectsOutlinedIcon from '@mui/icons-material/EmojiObjectsOutlined';
+import SmartDisplayRoundedIcon from '@mui/icons-material/SmartDisplayRounded';
+import SyncRoundedIcon from '@mui/icons-material/SyncRounded';
+import AddCircleOutlineRoundedIcon from '@mui/icons-material/AddCircleOutlineRounded';
+import PlayCircleFilledTwoToneIcon from '@mui/icons-material/PlayCircleFilledTwoTone';
+import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
+import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
+import AnnouncementOutlinedIcon from '@mui/icons-material/AnnouncementOutlined';
+import OutlinedFlagTwoToneIcon from '@mui/icons-material/OutlinedFlagTwoTone';
+import PlayCircleFilledOutlinedIcon from '@mui/icons-material/PlayCircleFilledOutlined';
 
 const itensMenuLateral = [
     {
@@ -41,62 +57,63 @@ const itensMenuLateral = [
     {
         index: 6,
         text: 'Música',
-        icon: <AddCircle/>
+        icon: <MusicNoteOutlinedIcon/>
     },
     {
         index: 7,
         text: 'Esportes',
-        icon: <AddCircle/>
+        icon: <EmojiEventsRoundedIcon/>
     }, 
     {
         index: 8,
         text:'Jogos',
-        icon: <AddCircle/>
+        icon: <VideogameAssetIcon/>
     },
     {
         index: 9,
         text:'Filmes',
-        icon:<AddCircle/>
+        icon:<LocalMoviesIcon/>
     },
     {
         index: 10,
         text: 'Notícias',
-        icon:<AddCircle/>
+        icon:<NewspaperIcon/>
     },
     {
         index: 11,
         text:'Ao vivo',
-        icon: <AddCircle/>
+        icon: <StreamIcon/>
     }, 
     {
         index: 12,
         text:'Aprender',
-        icon: <AddCircle/>
+        icon: <EmojiObjectsOutlinedIcon/>
     },
     {
         index: 12,
         text:'Vídeos do momento',
-        icon: <AddCircle/>
+        icon: <SmartDisplayRoundedIcon sx={{color: 'red', backgroundColor: 'white'}}/>
     },
     {
         index: 13,
         text:'Vídeo em 360°',
-        icon: <AddCircle/>
+        icon: <SyncRoundedIcon/>
     },
     {
         index: 14,
         text:'Procurar canais',
-        icon: <AddCircle/>
+        icon: <AddCircleOutlineRoundedIcon/>
     },
     {
         index: 15,
         text:'Youtube Premium',
-        icon: <AddCircle/>
+        icon:  <SmartDisplayRoundedIcon/>
+
     },
     {
         index: 16,
         text:'Youtube Music',
-        icon: <AddCircle/>
+        icon: <PlayCircleFilledOutlinedIcon sx={{color: 'red'}}/>  
     },
     {
         index: 17,
@@ -106,27 +123,27 @@ const itensMenuLateral = [
     {
         index: 18,
         text:'Youtube TV',
-        icon: <AddCircle/>
+        icon: <LiveTvOutlinedIcon/>
     },
     {
         index: 20,
         text:'Configurações',
-        icon: <AddCircle/>
+        icon: <SettingsOutlinedIcon/>
     },
     {
         index: 21,
         text:'Histórico de denúncias',
-        icon: <AddCircle/>
+        icon: <OutlinedFlagTwoToneIcon/>
     },
     {
         index: 22,
         text:'Ajuda',
-        icon: <AddCircle/>
+        icon: <HelpOutlineOutlinedIcon/>
     },
     {
         index: 22,
         text:'Enviar feedback',
-        icon: <AddCircle/>
+        icon: <AnnouncementOutlinedIcon/>
     },
 ]
 export default itensMenuLateral;
