@@ -17,11 +17,12 @@ import {
 } from '@mui/material/';
 import MenuLateral from '../../components/MenuLateral'
 import Conteudo from '../../components/Conteudo';
+import More from '../../components/More'
 
 //ícones:
 import MenuIcon from '@mui/icons-material/Menu';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
+
 //Imagens
 import Logo from '../../img/preto.png'
 
@@ -40,9 +41,7 @@ export default function Home() {
                     <div className={style['grow']}/> {/*--> Espaçamento */}
 
                     {/* BOTÃO "MORE" */}
-                    <IconButton color="inherit" sx={{ mr: 1 }}>
-                        <MoreVertIcon fontSize="small"/>
-                    </IconButton>
+                    <More/>
 
                     {/* BOTÃO DE LOGIN */}
                     <div className={style['login-button']}>
