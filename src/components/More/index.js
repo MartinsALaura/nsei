@@ -14,13 +14,13 @@ import { Typography } from '@mui/material';
 import options from './options'
 
 export default function LongMenu() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
+  const [anchorel, setanchorel] = React.useState(null);
+  const open = Boolean(anchorel);
   const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
+    setanchorel(event.currentTarget);
   };
   const handleClose = () => {
-    setAnchorEl(null);
+    setanchorel(null);
   };
 
   return (
@@ -36,7 +36,7 @@ export default function LongMenu() {
         <MoreVertIcon/>
       </IconButton>
       <Menu
-          anchorEl={anchorEl}
+          anchorEl={anchorel}
           id="more-menu"
           open={open}
           onClose={handleClose}
