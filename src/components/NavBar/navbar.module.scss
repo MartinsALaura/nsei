@@ -3,10 +3,6 @@
     z-index: 1201;
 }
 
-.ToolBar {
-    box-shadow: none;
-}
-
 .logo {
     height: 25px;
 }
@@ -51,15 +47,6 @@
 .search-box span {
     position: absolute;
     right: 10px;
-    cursor: pointer;
-}
-
-.search-button {
-    background-color: var(--secondary-light-color);
-    height: 38px;
-    align-items: center;
-    justify-content: center;
-    width: 70px;
     cursor: pointer;
 }
 
