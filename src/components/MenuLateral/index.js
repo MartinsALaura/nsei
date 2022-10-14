@@ -57,6 +57,7 @@ export default function MenuLateral() {
                 [`& .MuiDrawer-paper`]: { width: drawerWidth, boxSizing: 'border-box' },
                 borderRight: 'none',
             }}
+            style={{zIndex: 5}}
         >
             <Toolbar/>
             <Box sx={{ overflow: 'auto' }}>

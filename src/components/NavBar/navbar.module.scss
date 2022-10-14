@@ -1,0 +1,69 @@
+.AppBar {
+    box-shadow: none;
+    z-index: 1201;
+}
+
+.ToolBar {
+    box-shadow: none;
+}
+
+.logo {
+    height: 25px;
+}
+
+.grow {
+ flex-grow: 1;   
+}
+
+.icons {
+    padding-left: 12px ;
+
+}
+
+.login-button {
+    color:#3EA6FF
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    position: relative;
+    min-width: 650px;
+}
+
+.search-box {
+    width: 100%;
+    position: relative;
+}
+
+.search-box input {
+    outline: none;
+    border: 1px solid var(--secondary-light-color);
+    background-color: var(--primary-color);
+    color: var(--text-main);
+    font-size: 16px;
+    padding: 9px 6px;
+    width: 100%;
+    font-family: 'Roboto';
+}
+ 
+.search-box span {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.search-button {
+    background-color: var(--secondary-light-color);
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    cursor: pointer;
+}
+
+.search-mic {
+    margin-left: 12px;
+    cursor: pointer;
+}
