@@ -1,8 +1,3 @@
-.AppBar {
-    box-shadow: none;
-    z-index: 1201;
-}
-
 .logo {
     height: 25px;
 }
@@ -47,6 +42,14 @@
 .search-box span {
     position: absolute;
     right: 10px;
+    cursor: pointer;
+}
+.btn {
+    background-color: var(--secondary-light-color);
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
     cursor: pointer;
 }
 

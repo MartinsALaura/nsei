@@ -1,5 +1,5 @@
 //###IMPORTS###
-import {React} from 'react';
+import {React, useState} from 'react';
 
 //Style:
 import style from './home.module.scss'
@@ -14,13 +14,20 @@ import Conteudo from '../Conteudo';
 import NavBar from '../NavBar'
 
 export default function Home() {
+    const [menu, setMenu] = useState(true)
+
+    function ChangeMenu(){
+        menu?setMenu(false):setMenu(true)
+        console.log(menu)
+    }
+
     return (
         <div className={style.home}>      
-            <NavBar/> {/* NAVBAR */}
+            <NavBar menu={menu} setMenu={setMenu} ChangeMenu={ChangeMenu}/> {/* NAVBAR */}
             
             <Box display='flex'>
                <Hidden mdDown>
-                    <MenuLateral/> {/* MENU LATERAL */}
+                    <MenuLateral menu={menu}/> {/* MENU LATERAL */}
                </Hidden>
                 <Conteudo/> {/* CONTEÚDO (VÍDEOS) */}
             </Box>

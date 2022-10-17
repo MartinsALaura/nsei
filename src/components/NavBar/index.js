@@ -17,21 +17,27 @@ import Box from "@mui/material/Box"
 //ícones:
 import MenuIcon from '@mui/icons-material/Menu';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
-import SearchIcon from '@mui/icons-material/Search';
 import KeyboardVoiceIcon from '@mui/icons-material/KeyboardVoice';
 
 //Imagens
 import Logo from '../../img/preto.png'
 
-export default function NavBar() {
+export default function NavBar({menu, setMenu, ChangeMenu}) {
     const [search, setSearch] = useState('')
     
     return (
-        <AppBar className={style['AppBar']} color='inherit' style={{zIndex: 10}}>
+        <AppBar className={style['AppBar']} sx={{boxShadow: 'none', zIndex: 10000}} color='inherit'>
             <Toolbar style={{justifyContent: 'space-between'}}>
                 {/* MENU */}
                 <Box style={{display: "flex", alignItems: 'center'}}>
-                    <IconButton className={style.icons} edge="start" color="inherit" aria-label="menu" sx={{ mr: 2}}>
+                    <IconButton 
+                        className={style.icons} 
+                        edge="start" 
+                        color="inherit" 
+                        aria-label="menu" 
+                        sx={{ mr: 2}}
+                        onClick={ChangeMenu}
+                    >
                         <MenuIcon/>
                     </IconButton>
 
@@ -47,15 +53,17 @@ export default function NavBar() {
                             value={search} 
                             onChange={(e) => {setSearch(e.target.value)}}
                         />
-                        {search !== "" && <span className="material-symbols-rounded" onClick={()=> setSearch("")}>
-                            close
-                        </span>}
                     </div>
+                    
                     <button
                         aria-label='search' 
-                            style={{margin:'1px', border:'none', color: '#000', backgroundColor: '#f6f6f6'}} 
-                            > 
-                        <SearchIcon/>
+                        style={{ border:'none', color: '#000', backgroundColor: '#f6f6f6'}} 
+                    > 
+                        
+                        <span className='material-symbols-rounded'>
+                                search
+                        </span>
+                        
                     </button>
                     <div className={style["search-mic"]}>
                         <IconButton><KeyboardVoiceIcon sx={{color:'#000'}}/></IconButton>
