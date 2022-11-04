@@ -2,6 +2,8 @@
 Esse projeto é a recriação da interface do youtube, através do vídeo:
 ...
 Afim de treinar o uso de React e os componentes do MUI. 
+
+Vizualize pelo link: https://copyyoutube-bo58yb365-martinsalaura.vercel.app
  
  OBS: Diferente do vídeo, o css foi criado em arquivos separados usando o sass. Também foram criadas pastas para manter os arquivos mais organizados.
 
